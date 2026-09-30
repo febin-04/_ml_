@@ -4,7 +4,7 @@ An end-to-end Machine Learning project studying how feature scaling affects dist
 
 ---
 
-## 📌 Project Overview & Abstract
+## Project Overview & Abstract
 
 - **Dataset:** [UCI Individual Household Electric Power Consumption](https://archive.ics.uci.edu/dataset/235/individual+household+electric+power+consumption) (~2.07 million records).
 - **Tariff Assumed:** ₹7 per kWh.
@@ -14,7 +14,7 @@ An end-to-end Machine Learning project studying how feature scaling affects dist
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 | File | Description |
 | :--- | :--- |
@@ -26,7 +26,7 @@ An end-to-end Machine Learning project studying how feature scaling affects dist
 
 ---
 
-## 📊 Experimental Results
+## Experimental Results
 
 | Model | Scaling Status | MAE (₹) | RMSE (₹) | $R^2$ Score |
 | :--- | :--- | :---: | :---: | :---: |
@@ -36,18 +36,3 @@ An end-to-end Machine Learning project studying how feature scaling affects dist
 | **Linear Regression** | With Scaling | 309.26 | 406.86 | 0.9246 |
 
 > **Takeaway:** Distance metrics (Euclidean) in KNN get overwhelmed by high-magnitude features (e.g. Sub-metering Wh at ~275,000) over low-magnitude features (e.g. Active Power at ~1 kW). StandardScaler normalizes all features to mean 0 and variance 1, restoring balanced distance weights.
-
----
-
-## 🚀 How to Run
-
-1. **Install dependencies:**
-   ```bash
-   pip install pandas numpy scikit-learn matplotlib seaborn
-   ```
-
-2. **Execute all parts end-to-end:**
-   ```bash
-   python run_all.py
-   ```
-   *(Ensure `household_power_consumption.txt` is present in the project directory).*
